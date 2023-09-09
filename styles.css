@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Manrope:wght@200;300;400;500;600;700&family=Open+Sans:wght@400;600;700&family=Overpass&display=swap');
+
+body{
+    margin: 0;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+p.exclamation{
+    position: absolute;
+    top: -14%;
+    right: 25%;
+    font-size: 30px;
+}
+
+i.exclamation{
+    color: rgb(228, 128, 128);
+}
+
+
+p.error-message{
+    font-size: 14px;
+    margin-top: -15px;
+    transform: translateX(0em);
+    color: rgb(228, 128, 128);
+    letter-spacing: 1px;
+}
+
+header{
+    padding: 40px 60px 40px;
+}
+
+img.desktop-logo{
+    display: none;
+}
+main{
+    background: url("images/bg-pattern-desktop.svg");
+    background-size: contain;
+}
+
+img.mobile-main{
+    width: 100%;
+}
+
+img.desktop-main{
+    display: none;
+}
+
+p{
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    color: black;
+
+}
+
+p span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+article{
+    color:hsl(0, 36%, 70%);
+    text-align: center;
+    padding: 0px 30px 30px;
+    line-height: 1.5;
+}
+
+div.input{
+    width: 80%;
+    margin: 20px auto 30px;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px solid hsl(0, 46%, 83%);
+    border-radius: 35px;
+}
+
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.arrow-wrap{
+    color: white;
+    background-color: hsl(0, 36%, 81%);
+    position: absolute;
+    top: 0;
+    right: 0%;
+    padding: 17px 35px;
+    border-radius: 40px;
+
+}
+
+.arrow-wrap:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 10px hsl(0, 36%, 81%);
+
+}
+
+
+
+@media (min-width: 800px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        align-items: center;
+    }
+
+    header{
+        display: none;
+    }
+
+    section.flex-2{
+        display: flex;
+
+        width: 100%;
+    }
+
+    section.flex-2 > main{
+        flex: 1;
+        padding: 50px 5%;
+    }
+
+    img.mobile-logo{
+        display: none;
+    }
+
+    img.mobile-main{
+        display: none;
+    
+    }
+
+    img.desktop-main{
+        display: block;
+        height: 100vh;
+        width: 40%;
+        object-fit: cover;
+        order: 2;
+        object-position: 10% 0%; 
+    }
+
+    img.desktop-logo{
+        display: block;
+        
+    }
+
+}
